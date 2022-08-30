@@ -1,0 +1,158 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family :'Times New Roman', Times, serif;
+    font-size: 1.2em;
+}
+
+hr {
+    width: 10%;
+    margin: 0 auto;
+    border: 2px solid #003d33;
+}
+.btn_custom {
+    background:  #003d33;
+    color: #DFE7F2;
+    transition: ease .5s;
+}
+
+.btn_custom:hover {
+    transform: scale(1.1);
+}
+.fa-brands, .fa-solid  {
+    color: #003d33;
+    font-size: 2.5em;
+}
+
+.hero{
+    background: #DFE7F2;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero .menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+.hero .menu a{
+    text-decoration: none;
+    color: black;
+}
+
+.hero .image {
+    text-align: right;
+}
+
+.hero .contact {
+    text-align: right;
+}
+
+.about {
+    height: 300px;
+    margin-top: 10px;
+}
+
+.social-media a{
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+
+#myProgress {
+    width: 100%;
+    background-color: #BFBFBF;
+}
+  
+#javascript {
+    width: 70%;
+    height: 10px;
+    background-color: #e4a125;
+    margin: 5px 0px;
+}
+
+#php {
+    width: 25%;
+    height: 10px;
+    background-color: #787CB5;
+    margin: 5px 0px;
+}
+
+#bootstrap {
+    width: 60%;
+    height: 10px;
+    background-color: #563d7c ;
+    margin: 5px 0px;
+}
+
+#jquery {
+    width: 50%;
+    height: 10px;
+    background-color: #0769ad;
+    margin: 5px 0px;
+}
+
+.experiences {
+    background: #DFE7F2;
+    height: 300px;
+}
+
+.experiences h2{
+    text-align: center;
+}
+
+.education {
+    height: 300px;
+}
+
+.education h2 {
+    text-align: center;
+}
+
+#list_experiences {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+#list_experiences li {
+    width: 50%;
+    margin: 10px 0px;
+    text-transform: capitalize;
+}
+#list_education {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+#list_education li {
+    width: 50%;
+    margin: 10px 0px;
+    text-transform: capitalize;
+}
+
+
+
+@media screen and (max-width : 800px) {
+    .hero, .experiences, .education, .about {
+        height : auto;
+    }
+    .hero .image {
+        text-align: center;
+    } 
+    .hero .contact {
+        text-align: left;
+    }
+    #list_experiences, #list_education  {
+        flex-direction: column;
+        width: 100%;
+    }
+    #list_education li, #list_experiences li{
+        width: 90%;
+    }
+
+}
