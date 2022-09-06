@@ -115,13 +115,35 @@ hr {
 #list_experiences {
     display: flex;
     list-style: none;
+    flex-direction: row;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 #list_experiences li {
-    width: 50%;
-    margin: 10px 0px;
+    width: 40%;
     text-transform: capitalize;
+}
+
+#list_experiences li:nth-child(1) {
+    border-right: 1px solid #00695c;
+    border-bottom: 1px solid #00695c;
+    
+}
+
+#list_experiences li:nth-child(2) {
+    border-bottom: 1px solid #00695c;
+    padding-left: 2%;
+}
+
+#list_experiences li:nth-child(2) {
+    border-bottom: 1px solid #00695c;
+    border-width: 10%;
+}
+
+#list_experiences li:last-child{
+    border-right: 1px solid #00695c;
+    border-block-start: #787CB5;
 }
 #list_education {
     display: flex;
@@ -153,6 +175,13 @@ hr {
     }
     #list_education li, #list_experiences li{
         width: 90%;
+        border: none;
     }
 
+}
+
+@media screen and ( max-width : 600px) {
+    #list_education li, #list_experiences li{
+        border: none;
+    }
 }
