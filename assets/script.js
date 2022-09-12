@@ -1,5 +1,5 @@
 var nantenaina = {
-    image : "../images/pdp.jpg",
+    image : "../assets/images/pdp.jpg",
     name : "Randriamihamintsoa",
     firstname : "Nantenaina",
     post : "Developpeur Web",
@@ -25,7 +25,7 @@ var nantenaina = {
         {
             "poste" : "opérateur de saisie",
             "dure" : "juillet 2019 - mars 2020",
-            "entreprise" : "Numen Madagascar"
+            "entreprise" : "AREA Anosizato"
             
         }
     ],
@@ -87,3 +87,12 @@ document.getElementById('list_education').innerHTML = listItemEducation;
 //     listItemSkills += '<li>' + nantenaina.skills[i] + '</li>';
 // }
 // document.getElementById('list_skills').innerHTML = listItemSkills;
+
+
+$(document).on("click", ".button_mode", function() {
+    if ( ($(".button_mode").text("dark mode")) ) {
+        ($(".button_mode").text("ligth mode"));
+    } else {
+        ($(".button_mode").text("dark mode"));
+    }
+});
