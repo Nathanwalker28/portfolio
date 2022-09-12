@@ -89,14 +89,43 @@ document.getElementById('list_education').innerHTML = listItemEducation;
 // document.getElementById('list_skills').innerHTML = listItemSkills;
 
 
+
 $(document).on("click", ".button_mode", function() {
+    
     if ($(".button_mode").text() === "dark mode") {
         $(".button_mode").text("light mode");
+        $(".button_mode").css({
+            color : "#000",
+            background : "#f7f7f7"
+        })
         $("body").css({
             background : "#101010",
-            color : "#fff"
+            color : "#fff",
+            transition : "ease-out 1s"
+        })
+        $('.hero').css({
+            background : "#262626"
+        })
+        $('.experiences').css({
+            background : "#262626"
         })
     } else {
+        $(".button_mode").css({
+            color : "#f7f7f7",
+            background : "#000",
+            transition : "ease-out 1s"
+        })
         $(".button_mode").text("dark mode");
+        $("body").css({
+            background : "#f7f7f7",
+            color : "#101010",
+            transition : "ease .5s"
+        })
+        $('.hero').css({
+            background: "#DFE7F2",
+        })
+        $('.experiences').css({
+            background: "#DFE7F2",
+        })
     }
 });

@@ -5,7 +5,10 @@ body{
     font-size: 1.2em;
 }
 
-
+.button_mode {
+    color: #f7f7f7;
+    background: #000;
+}
 hr {
     width: 10%;
     margin: 0.5% auto;
