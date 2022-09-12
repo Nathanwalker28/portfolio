@@ -90,9 +90,13 @@ document.getElementById('list_education').innerHTML = listItemEducation;
 
 
 $(document).on("click", ".button_mode", function() {
-    if ( ($(".button_mode").text("dark mode")) ) {
-        ($(".button_mode").text("ligth mode"));
+    if ($(".button_mode").text() === "dark mode") {
+        $(".button_mode").text("light mode");
+        $("body").css({
+            background : "#101010",
+            color : "#fff"
+        })
     } else {
-        ($(".button_mode").text("dark mode"));
+        $(".button_mode").text("dark mode");
     }
 });
