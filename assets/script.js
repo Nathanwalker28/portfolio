@@ -91,7 +91,6 @@ document.getElementById('list_education').innerHTML = listItemEducation;
 
 
 $(document).on("click", ".button_mode", function() {
-    
     if ($(".button_mode").text() === "dark mode") {
         $(".button_mode").text("light mode");
         $(".button_mode").css({
